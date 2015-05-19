@@ -49,6 +49,7 @@ namespace PlumRain.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
+            Assert.AreEqual("Your contact page.", result.ViewBag.Message);
         }
     }
 }

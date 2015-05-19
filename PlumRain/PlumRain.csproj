@@ -158,6 +158,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Alipay\AlipayAreaRegistration.cs" />
+    <Compile Include="Areas\Alipay\Controllers\DemoController.cs" />
+    <Compile Include="Areas\Alipay\Models\OrderViewModel.cs" />
     <Compile Include="Areas\PhotoView\Controllers\PhotoController.cs" />
     <Compile Include="Areas\PhotoView\PictureAreaRegistration.cs" />
     <Compile Include="Areas\ThreeLearn\Controllers\ThreeController.cs" />
@@ -211,6 +214,8 @@
     <Content Include="Areas\PhotoView\Views\Shared\_Menu.cshtml" />
     <Content Include="Areas\ThreeLearn\Views\web.config" />
     <Content Include="Areas\ThreeLearn\Views\Three\Cube.cshtml" />
+    <Content Include="Areas\Alipay\Views\web.config" />
+    <Content Include="Areas\Alipay\Views\Demo\Index.cshtml" />
     <None Include="Properties\PublishProfiles\PlumRain_publish.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -264,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Alipay\Views\Shared\" />
     <Folder Include="Areas\PhotoView\Models\" />
     <Folder Include="Areas\ThreeLearn\Models\" />
     <Folder Include="Areas\ThreeLearn\Views\Shared\" />
@@ -274,6 +280,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Com\Com.csproj">
+      <Project>{be8a626e-5e03-4ee2-9f82-4ff03edfa199}</Project>
+      <Name>Com</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
